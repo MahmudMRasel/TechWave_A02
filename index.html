@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechWave</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- Custom CSS (only for gradients + animation + breakpoints + special positioning) -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -46,6 +44,73 @@
    </div>
  </nav>
 </header>
+
+
+<main>
+    <section class="relative overflow-hidden">
+      <!-- Background -->
+      <img src="Images/hero-bg.png" alt="Hero background"
+           class="absolute inset-0 h-full w-full object-cover" />
+
+      <!-- Overlay (opacity controlled by CSS) -->
+      <div class="hero-overlay absolute inset-0"></div>
+
+      <!-- Content -->
+      <div class="hero-inner relative mx-auto max-w-6xl px-4 text-center">
+
+        <!-- Wave image behind circle -->
+        <img src="Images/Header.png" alt="" class="hero-wave" />
+
+        <!-- Circle area -->
+        <div class="circle-wrap relative mx-auto">
+
+          <!-- Glow -->
+          <div class="circle-glow absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+
+          <!-- Circle image -->
+          <img src="Images/hero-circle.png" alt="Podcast circle"
+               class="relative h-full w-full rounded-full" />
+
+          <!-- Microphone -->
+          <img src="Images/microphone.png" alt=""
+               class="mic absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+
+          <!-- NEW badge -->
+          <span class="new-badge absolute rounded-full bg-emerald-400 px-4 py-1 text-[12px] font-extrabold text-black">
+            NEW
+          </span>
+
+        </div>
+
+        <!-- Title -->
+        <h1 class="hero-title mt-8 font-extrabold tracking-tight text-white">
+          TechWave
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="mx-auto mt-3 max-w-xl text-sm text-white/65">
+          Your daily dose of tech insights, productivity hacks, and personal growth
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-actions mt-7 flex items-center justify-center gap-3">
+          <a href="#episodes"
+             class="btn-gradient btn-hover inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white">
+            <img src="Images/spotify.png" alt="" class="h-4 w-4" />
+            Listen On Spotify
+          </a>
+
+          <a href="#subscribe"
+             class="btn-hover inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold
+                    border border-emerald-400/60 bg-emerald-500/10 text-emerald-200 hover:bg-emerald-500/15">
+            <img src="Images/message.png" alt="" class="h-4 w-4" />
+            Subscribe
+          </a>
+        </div>
+
+      </div>
+    </section>
+</main>
 
 </body>
 </html>
