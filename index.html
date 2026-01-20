@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechWave</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Custom CSS (only for gradients + animation + breakpoints + special positioning) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-[#0A0620] text-white">
+
+  <!-- ================= NAVBAR ================= -->
+<header class="border-b border-white/10 bg-[#120822]">
+ <nav class="mx-auto max-w-6xl px-4">
+   <div class="flex h-20 items-center justify-between">
+
+     <!-- Logo -->
+     <a href="#" class="text-4xl font-extrabold tracking-tight">
+       <span class="text-white">Tech</span>
+       <span class="bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-700 bg-clip-text text-transparent">Wave</span>
+     </a>
+
+
+     <!-- Menu: visible on medium and up -->
+     <ul class="nav-menu items-center gap-10 text-sm font-medium text-white/70">
+       <li><a href="#about" class="hover:text-white">About</a></li>
+       <li><a href="#episodes" class="hover:text-white">Episodes</a></li>
+       <li><a href="#host" class="hover:text-white">Host</a></li>
+     </ul>
+
+     <!-- Subscribe button: visible on medium and up -->
+     <a href="#subscribe" class="nav-btn items-center gap-2 rounded-full px-6 py-2 text-sm font-semibold bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-700 text-white transition-transform hover:scale-105">
+       Subscribe <span aria-hidden="true">→</span>
+     </a>
+
+     <!-- Hamburger: shown below lg -->
+     <button class="nav-hamburger inline-flex lg:hidden p-2" aria-label="Open menu">
+       <img src="Images/hamburger-menu.png" alt="" class="h-4 w-auto" />
+     </button>
+
+   </div>
+ </nav>
+</header>
+
+</body>
+</html>

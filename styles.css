@@ -1,0 +1,37 @@
+body{ margin: 0; }
+
+.text-gradient{
+  background: linear-gradient(15deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-gradient{
+  background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+.btn-hover{
+  transition: transform 0.2s ease;
+}
+.btn-hover:hover{
+  transform: scale(1.03);
+}
+
+.nav-menu { display: flex; }
+.nav-btn { display: inline-flex; }
+.nav-hamburger { display: none; }
+
+
+@media (max-width: 576px){
+  .nav-menu, .nav-btn { display: none; }
+  .nav-hamburger { display: inline-flex; }
+}
+
+
+@media (min-width: 577px){
+  .nav-menu { display: flex; }
+  .nav-btn { display: inline-flex; }
+  .nav-hamburger { display: none; }
+}
+
